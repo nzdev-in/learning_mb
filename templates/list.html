@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}Message List{% endblock %}
+{% block content %}
+<h1>Messages</h1>
+{% for post in all_posts %}
+    <ul>
+        <li>{{ post }}</li>
+    </ul>
+{% endfor %}
+{% endblock %}
